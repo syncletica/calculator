@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFEFEF;
+    font-family: 'Roboto mono', sans-serif;
+}
+
+button {
+    font-family: 'Roboto mono', sans-serif;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* grid stuff */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    grid-template-areas: 
+    "screen screen screen screen"
+    "clear clear back division"
+    "one two three multiplication"
+    "four five six subtraction"
+    "seven eight nine addition"
+    "zero zero zero equals";
+    margin: 40px auto;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 377px;
+    box-shadow: 0px 3px 5px 2px #40404009;
+}
+
+.screen {
+    grid-area: screen;
+    height: 160px;
+    width: 343px;
+    line-height: 42px;
+    background-color: #313131;
+    border-radius: 2px;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: top;
+    padding: 16px;
+    overflow: hidden;
+    word-break: break-all;
+
+
+}
+
+
+
+.clear {
+    grid-area: clear;
+}
+
+.back {
+    grid-area: back;
+}
+
+.division {
+    grid-area: division;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.multiplication {
+    grid-area: multiplication;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.subtraction {
+    grid-area: subtraction;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.addition {
+    grid-area: addition;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.equals {
+    grid-area: equals;
+}
+
+
+/* button styling */
+
+.btn-style-universal {
+    height: 80px;
+    width: auto;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-bg-prim {
+    background-color: #EBE9E4;
+    border: 1px solid #EFECE6;
+}
+
+.btn-bg-prim:hover {
+    background-color: #e1ded9;
+}
+
+.btn-bg-sec {
+    background-color: #1F869D;
+    border: 0;
+}
+
+.btn-bg-sec:hover {
+    background-color: #1d798e;
+}
+
+.btn-font-color-tert {
+    color: white;
+}
+
+.button-font-color-sec {
+    color: #1F869D;
+}
+
+.btn-font-color-prim {
+    color: #4e4e4e;
+}
+
+.btn-font-color-clear {
+    color: #DD1515;
+}
